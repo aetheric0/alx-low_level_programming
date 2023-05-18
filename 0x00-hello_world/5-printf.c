@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Pogram Starts Here
+ * main - Entry point
  *
  * Description: Print to stdout using printf funtion
  *
