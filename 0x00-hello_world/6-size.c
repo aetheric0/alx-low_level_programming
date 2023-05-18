@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-/*
- * Main - Program starts at main
+/**
+ * main - Program starts at main
  *
  * Description - Program to print the Size of the different intrinsic types in C.
  *
- * Return - Value of return is 0
+ * Return: Value of return is 0
  */
 
 int main(void)
