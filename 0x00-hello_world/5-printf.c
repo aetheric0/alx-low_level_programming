@@ -5,7 +5,7 @@
  *
  * Description: Print to stdout using printf funtion
  *
- * Return - Value 0  (Success)
+ * Return - Always 0 (Success)
  */
 
 int main(void)
