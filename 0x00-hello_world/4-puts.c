@@ -3,7 +3,7 @@
 /*
  * Main - Program starts at main
  *
- * Return - Value returned is 0
+ * Return: Value returned is 0
  */
 
 int main(void)
