@@ -3,7 +3,7 @@
 /**
  * main - Program starts at main
  *
- * Description - Program to print the Size of the different intrinsic types in C
+ * Description - Program to print the Size of the intrinsic types in C
  *
  * Return: Value of return is 0
  */
