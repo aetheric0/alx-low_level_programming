@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * Main - Program starts at main
  *
  * Return: Value returned is 0
