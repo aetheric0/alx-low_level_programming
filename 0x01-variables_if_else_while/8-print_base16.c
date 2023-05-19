@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 /**
- * Main - Entry Point
+ * main - Program Starts here
  *
- * Return: Value of 0
+ * Return: return value is 0
  */
+
 int main(void)
 {
-	int c;
+	int c,d;
 
-	for(c = 48; c <= 70; c++)
+	for (c = 48; c <= 57; c++)
 		putchar(c);
+	for (d = 97; d <= 102; d++)
+		putchar(d);
 	putchar('\n');
 
 	return (0);
