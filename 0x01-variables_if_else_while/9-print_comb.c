@@ -11,14 +11,12 @@ int main(void)
 
 	for (c = 48; c <= 57; c++)
 	{
-	  if (c == 57)
-	    putchar(c);
-	  else
-	  {
 		putchar(c);
-		putchar(',');
-		putchar(' ');
-	  }
+		if (c != 57)
+		  {
+		    putchar(',');
+		    putchar(' ');
+		  }
 	}
 	putchar('\n');
 
