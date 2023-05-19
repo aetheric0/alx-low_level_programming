@@ -3,7 +3,7 @@
 /**
  * Main - Entry Point
  *
- * Return: Value of 0
+ * Return: return Value of 0
  */
 
 int main(void)
@@ -15,4 +15,6 @@ int main(void)
 	for (c = 65; c <= 90; c++)
                 putchar(c);
 	putchar('\n');
+
+	return (0);
 }
