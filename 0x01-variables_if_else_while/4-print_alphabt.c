@@ -11,7 +11,7 @@ int main(void)
 	int c;
 
 	for (c = 97; c <= 122; c++)
-		if ( c == 101 || c == 113)
+		if (c == 101 || c == 113)
 			;
 		else
 			putchar(c);
