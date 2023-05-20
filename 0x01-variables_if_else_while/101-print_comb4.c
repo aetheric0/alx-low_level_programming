@@ -19,7 +19,7 @@ int main(void)
 				if ((c == j && j == k) || (c > j && j > k) ||
 (c > j && j < k) || (c > j && j == k) || (c == j && j > k) || (c == j && j < k)
 || (c == k && j < k) || (c == k && j > k) || (c < j && j == k) ||
-(c < k && k ==j) || (c < j && j > k))
+(c < k && k == j) || (c < j && j > k))
 				;
 				else
 				{
