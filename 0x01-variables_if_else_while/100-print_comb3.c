@@ -8,13 +8,13 @@
 
 int main(void)
 {
-	int c,j;
+	int c, j;
 
 	for (c = 48; c <= 57; c++)
 	{
 		for (j = 48; j <= 57; j++)
 		{
-			if ( c > j || c == j)
+			if (c > j || c == j)
 				;
 			else
 			{
