@@ -16,7 +16,10 @@ int main(void)
 		{
 			for (k = 48; k <= 57; k++)
 			{
-				if ((c == j && j == k) || (c > j && j > k) || (c > j && j < k) || (c > j && j == k) || (c == j && j > k) || (c == j && j < k) || (c == k && j < k) || (c == k && j > k) || (c < j && j == k) || (c < k && k == j) || (c < j && j > k))
+				if ((c == j && j == k) || (c > j && j > k) ||
+(c > j && j < k) || (c > j && j == k) || (c == j && j > k) || (c == j && j < k)
+|| (c == k && j < k) || (c == k && j > k) || (c < j && j == k) ||
+(c < k && k ==j) || (c < j && j > k))
 				;
 				else
 				{
