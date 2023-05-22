@@ -25,7 +25,7 @@ int main(void)
 						putchar(k);
 						putchar(l);
 						if (!(c == 54 && j == 55 &&
-						      k == 56 && l == 57))
+ k == 56 && l == 57))
                                                 {
                                                         putchar(',');
                                                         putchar(' ');
