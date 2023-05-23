@@ -3,6 +3,7 @@
 /**
  * _islower - writes the the string _putchar to stdout
  *
+ * @c : receives an int value later converter to char
  * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
  */
