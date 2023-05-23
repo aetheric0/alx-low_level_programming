@@ -1,11 +1,11 @@
 #include "main.h"
 
-void jack_bauer(void);
-
-int main(void)
-{
-	jack_bauer();
-}
+/**
+ * jack_bauer - writes the the string _putchar to stdout
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
 void jack_bauer(void)
 {

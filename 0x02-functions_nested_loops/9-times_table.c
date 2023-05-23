@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * times_table - writes the the string _putchar to stdout
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
 void times_table(void)
 {
         int i, j, k;

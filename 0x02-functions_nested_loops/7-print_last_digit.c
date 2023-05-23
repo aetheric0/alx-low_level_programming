@@ -1,18 +1,13 @@
 #include "main.h"
 
-int print_last_digit(int);
-
-int main(void)
-{
-	int r;
-
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    _putchar('0' + r);
-    _putchar('\n');
-    return (0);
-}
+/**
+ * print_last_digit - writes the the string _putchar to stdout
+ *
+ * @a: receives an int converted to char
+ "
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
 int print_last_digit(int a)
 {
