@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - writes the the string _putchar to stdout
+ * print_alphabet - writes the the string _putchar to stdout
  *
  * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
