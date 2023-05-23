@@ -20,11 +20,13 @@ int print_last_digit(int a)
 		_putchar(b + '0');
 	}
 
-	else
+	else if (a > 0)
 	{
 		b = a % 10;
 		_putchar(b + '0');
 	}
+	else
+		putchar('0')
 
 	return (b);
 }
