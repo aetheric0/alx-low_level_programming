@@ -1,10 +1,11 @@
 #include "main.h"
 
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
+/**
+ * print_alphabet_x10 - writes the the string _putchar to stdout
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 
 void print_alphabet_x10(void)
 {
