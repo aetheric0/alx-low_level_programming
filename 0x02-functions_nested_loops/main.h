@@ -13,11 +13,6 @@
 int _putchar(char c);
 void times_table(void);
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 void times_table(void)
 {
 	int i, j, k;
