@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main - writes the the string _putchar to stdout
  *
  * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
