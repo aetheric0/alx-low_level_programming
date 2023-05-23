@@ -5,7 +5,7 @@
  * _abs - writes the the string _putchar to stdout
  *
  * @a: receives an int converted to char
- "
+ *
  * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -22,5 +22,5 @@ int _abs(int a)
 	{
 		b = a;
 	}
-	return(b);
+	return (b);
 }

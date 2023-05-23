@@ -4,7 +4,7 @@
  * print_last_digit - writes the the string _putchar to stdout
  *
  * @a: receives an int converted to char
- "
+ *
  * Return: On success 0.
  * On error, -1 is returned, and errno is set appropriately.
  */
