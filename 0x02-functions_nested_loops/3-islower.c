@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _islower - writes the the string _putchar to stdout
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
 int _islower(int c)
 {
 
@@ -7,7 +14,7 @@ int _islower(int c)
 
 	for (i = 97; i <= 122; i++)
 	{
-		if( c == i)
+		if (c == i)
 		{
 			a = 1;
 			break;
