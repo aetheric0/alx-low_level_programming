@@ -1,9 +1,9 @@
 #include "main.h"
 
-int add(int a, int b)
+int add(int x, int y)
 {
-	int x,y,c;
+	int ,c;
 
 	c = x + y;
-	return(c)
+	return (c);
 }
