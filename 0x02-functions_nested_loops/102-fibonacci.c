@@ -14,7 +14,7 @@ int main(void)
 	{
 		j = j + i;
 		printf("%d, ", j);
-		j = i
+		j = i;
 	}
 	_putchar('\n');
 	return (0);
