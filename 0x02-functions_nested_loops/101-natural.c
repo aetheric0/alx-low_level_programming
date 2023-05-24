@@ -2,15 +2,8 @@
 /**
  * print_nat- function that adds and prints the number
  *
- * main - prints the added numbers
- * Return: value 0 is successful
+ * Return: Nothing
 */
-
-int main(void)
-{
-	print_nat();
-	return (0);
-}
 
 void print_nat(void)
 {
