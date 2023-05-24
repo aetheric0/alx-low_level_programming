@@ -2,7 +2,7 @@
 /**
  * main - prints the added numbers
  * Return: value 0 is successful
- * print_nat: function that adds and prints the number
+ * print_nat- function that adds and prints the number
 */
 
 int main(void)
@@ -13,7 +13,7 @@ int main(void)
 
 void print_nat(void)
 {
-	int i,j,c,k;
+	int i, j, c, k;
 
 	i = 0;
 	j = 0;
@@ -25,7 +25,7 @@ void print_nat(void)
 		}
 		i++;
 	}
-	for(c = 100000; c >= 1; c = c / 10)
+	for (c = 100000; c >= 1; c = c / 10)
 	{
 		k = j / c;
 		if (k < 9)
