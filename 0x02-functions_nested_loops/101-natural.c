@@ -1,8 +1,8 @@
 #include "main.h"
 /**
+ * print_nat- function that adds and prints the number
  * main - prints the added numbers
  * Return: value 0 is successful
- * print_nat- function that adds and prints the number
 */
 
 int main(void)
