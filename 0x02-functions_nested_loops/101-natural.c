@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_nat- function that adds and prints the number
  *
