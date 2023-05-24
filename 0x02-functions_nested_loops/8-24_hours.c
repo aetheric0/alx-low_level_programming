@@ -20,7 +20,8 @@ void jack_bauer(void)
 				{
 					if (i == 50 && j > 51)
 						;
-					else if (i < 50 && j <= 57)
+					else if ((i < 50 && j <= 57) ||
+						 (i == 50 && j <= 51))
 					{
 					_putchar(i);
 					_putchar(j);
@@ -28,16 +29,6 @@ void jack_bauer(void)
 					_putchar(k);
 					_putchar(l);
 					_putchar('\n');
-					}
-					else if (i == 50 && j <= 51)
-					{
-					_putchar(i);
-					_putchar(j);
-					_putchar(':');
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
-
 					}
 				}
 			}
