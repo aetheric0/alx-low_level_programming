@@ -2,6 +2,9 @@
 
 /**
  * add - add two numbers
+ * @x - first operand
+ * @y - second operand
+ * return - value is c
  */
 int add(int x, int y)
 {
