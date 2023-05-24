@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * print_nat- function that adds and prints the number
- *
- * Return: Nothing
+ * main - prints the added numbers
+ * Return: value 0 is successful
 */
 
-void print_nat(void)
+int main(void)
 {
 	int i, j, c, k;
 
@@ -32,4 +31,5 @@ void print_nat(void)
 		}
 	}
 	_putchar('\n');
+	return (0);
 }
