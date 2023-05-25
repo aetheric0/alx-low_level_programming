@@ -11,9 +11,12 @@ int _isupper(int c)
 	for (i = 65; i <= 90; i++)
 	{
 		if (c == i)
+		{
 			c = 1;
+			break;
+		}
 		else
 			c = 0;
 	}
-	return (c)
+	return (c);
 }
