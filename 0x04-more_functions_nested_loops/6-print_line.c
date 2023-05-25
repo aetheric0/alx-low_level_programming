@@ -8,9 +8,9 @@
 
 void print_line(int n)
 {
-	int i, j;
+	int j = n;
+	int i;
 
-	j = n;
 	for (i = 0; i <= j; i++)
 	{
 		if (j < 0 || j == 0)
