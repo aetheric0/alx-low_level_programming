@@ -20,5 +20,6 @@ int _isupper(int c)
 		else
 			c = 0;
 	}
+	
 	return (c);
 }
