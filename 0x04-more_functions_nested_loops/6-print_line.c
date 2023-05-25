@@ -14,10 +14,7 @@ void print_line(int n)
 	{
 		if (n < 0 || n == 0)
 			break;
-		else
-		{
-			_putchar('_');
-		}
+		_putchar('_');
 	}
 	_putchar('\n');
 
