@@ -2,8 +2,9 @@
 
 /**
  * mul - multiplies two integers
- *
- * Return: returns the value of the product
+ * @a: integer value passed as argument for first operand
+ * @b: integer value passed as argument for second operand
+ * Return: success (c)
  */
 
 int mul(int a, int b)
