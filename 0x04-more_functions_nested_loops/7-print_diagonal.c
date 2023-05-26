@@ -2,7 +2,7 @@
 
 /**
  * print_diagonal - prints a diagonal line
- *
+ * @n: integer passed as argument to determine length of diagonal
  * Return: Nothing
  */
 
@@ -10,23 +10,13 @@ void print_diagonal(int n)
 {
 	int i, j;
 
-	j = 1;
 	for (i = 0; i <= n; i++)
 	{
-		if (n <= 0)
-			;
-		if (i > 0)
+		for (j = 1; i < j; j = j + 2)
 		{
-			j = i - j;
-			if (j < i)
-			{
-				_putchar(' ');
-				j++;
-			}
-
-			j = 0;
-			_putchar('\\');
-			_putchar('\n');
+			_putchar(' ');
 		}
+		_putchar('\\');
+		_putchar('\n');
 	}
 }
