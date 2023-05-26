@@ -11,10 +11,10 @@ void print_line(int n)
 	int j = n;
 	int i;
 
-	for (i = 0; i <= j; i++)
+	for (i = 0; i < j; i++)
 	{
 		if (j < 0 || j == 0)
-			break;
+			;
 		_putchar('_');
 	}
 	_putchar('\n');
