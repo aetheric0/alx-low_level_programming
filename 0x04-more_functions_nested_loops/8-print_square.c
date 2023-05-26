@@ -8,9 +8,9 @@
 
 void print_square(int size)
 {
-	int i, j, k;
+	int i = size;
+	int j, k;
 
-	i = size;
 	for (j = 0; j < i; j++)
 	{
 		if (i <= 0)
