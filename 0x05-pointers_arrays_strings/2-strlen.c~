@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ * _strlen - updates value of pointer
+ * @a: first pointer param
+ * @b: second pointer param
+ * Return: Nothing
+ */
+
+int _strlen(char *s)
+{
+	int c = 0;
+
+	c = sizeof(&s);
+
+	return (c);
+}
