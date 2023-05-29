@@ -9,5 +9,6 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c);
+void swap_int(int *a, int *b);
 
 #endif
