@@ -3,8 +3,8 @@
 
 /**
  * print_array - function that prints array
- * @a - the array variable
- * @n - size of array
+ * @a: the array variable
+ * @n: size of array
  */
 
 void print_array(int *a, int n)
@@ -16,9 +16,9 @@ void print_array(int *a, int n)
 		printf("%d", a[i]);
 
 		if (i != n - 1)
-                {
-                        printf(", ");
-                }
-        }
+		{
+			printf(", ");
+		}
+	}
 	printf("\n");
 }
