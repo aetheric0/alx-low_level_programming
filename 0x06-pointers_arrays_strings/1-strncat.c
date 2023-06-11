@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _strncat -  Function to concatenate two strings
+ * _strncat -  Function to concatenate two strings, the string will use at most
+ * n bytes from the @src
  * @dest: first pointer argument
  * @src: second pointer argument
- * Return -  Type Char
+ * Return:  Returns the concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
 {
