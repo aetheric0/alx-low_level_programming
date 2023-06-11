@@ -4,6 +4,7 @@
  * will use at most n bytes from the src
  * @dest: first pointer argument
  * @src: second pointer argument
+ * @n: third argument int
  * Return:  Returns the concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
