@@ -3,8 +3,8 @@
 
 /**
  * reverse_array - function that reverses an array of integers
- * @a - argument that holds the array
- * @n - argument that holds the array size
+ * @a: argument that holds the array
+ * @n: argument that holds the array size
  */
 
 void reverse_array(int *a, int n)
