@@ -2,7 +2,7 @@
 
 /**
  * _strncpy - function to copy a string
- * @char: argument string is copied to
+ * @dest: argument string is copied to
  * @src: argument containing string we want copied
  * @n: max byte of src
  * Return: Returns the copied string
