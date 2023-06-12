@@ -11,6 +11,7 @@ int _strcmp(char *s1, char *s2)
 {
 	int i, j, res;
 
+	j = 0;
 	while (s1[j] != '\0')
 		j++;
 	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
