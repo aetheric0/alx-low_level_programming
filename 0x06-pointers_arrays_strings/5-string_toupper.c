@@ -2,7 +2,7 @@
 
 /**
  * *string_toupper - function that changes lower case characters to uppercase
- * @*s: argument containing the character to change
+ * @s: argument containing the character to change
  * Return: returns converted character
  */
 
