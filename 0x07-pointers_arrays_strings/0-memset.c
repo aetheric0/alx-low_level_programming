@@ -3,6 +3,7 @@
 /**
  * *_memset - function that fills memory with constant byte
  * @b: constant byte
+ * @*s: memory to be filled with constant byte
  * @n: maximum size of memory to fill
  * Return: Returns the constant byte
 */
