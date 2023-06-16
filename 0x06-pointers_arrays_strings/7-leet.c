@@ -16,12 +16,10 @@ char *leet(char *str)
 	{
 		for (j = 0; j < 15; j++)
 		{
-			if (j > 4 && j <= 9 && str[i] == arr[j])
+			if (&arr[j] < &arr[10] && str[i] == arr[j])
 			{
-				str[i] = arr[j + 5];
-			}
-			else if (j < 4 && str[i] == arr[j])
 				str[i] = arr[j + 10];
+			}
 		}
 	}
 
