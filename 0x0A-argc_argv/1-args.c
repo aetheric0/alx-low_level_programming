@@ -13,6 +13,6 @@ int main(int argc, char __attribute__ ((unused)) *argv[])
 
 	while (argc--)
 		i++;
-	printf("%d\n", i);
+	printf("%d\n", i - 1);
 	return (0);
 }
