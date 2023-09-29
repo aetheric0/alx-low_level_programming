@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Program that prints its name
@@ -9,11 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	if (argv[0] && argc >= 0)
+	if (argc >= 0)
 	{
-		for (i = 0; argv[0][i] != '\0'; i++)
-			_putchar(argv[0][i]);
-		_putchar('\n');
+		printf("%s\n", argv[0]);
 	}
 }
