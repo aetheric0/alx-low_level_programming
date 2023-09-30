@@ -20,10 +20,10 @@ int main(int argc, char *argv[])
 	}
 	for (i = 0; argv[1][i] != '\0'; i++)
 	{
-		if(atoi(argv[1][i] < 0))
+		if(atoi(argv[1]) < 0)
 			{
 				printf("0\n");
 			}
 	}
-	return (0)
+	return (0);
 }
