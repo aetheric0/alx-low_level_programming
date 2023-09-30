@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int MUL = 1;
+	int mul = 1;
 
 	if (argc < 2)
 	{
@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		MUL *= atoi(argv[i]);
+		mul *= atoi(argv[i]);
 	}
-	printf("%d\n", MUL);
+	printf("%d\n", mul);
 	return (0);
 }
