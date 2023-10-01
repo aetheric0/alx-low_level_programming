@@ -7,23 +7,24 @@
  * Return: Returns square root value of n
  **/
 
+int sqrt_helper(int, int);
+
 int _sqrt_recursion(int n)
 {
-	int a = 0;
-	int sqrt = 0;
+	return sqrt_helper(n, 1);
+}
 
+int sqrt_helper(int n, int a)
+{
 	if (n < 0)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
 
-	a = n / 2;
-	sqrt = _sqrt_recursion(n - a * a);
-
-	if (sqrt != -1 && sqrt * sqrt == n)
+	if (n/a == a && a < n)
+	{
 		return (a);
-	if (a * a > n)
-		return (_sqrt_recursion(n - (a - 1) * (a - 1)));
+	}
 	else
-		return sqrt;
+		return sqrt_helper(n, a + 1);
 }
