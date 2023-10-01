@@ -21,10 +21,14 @@ int sqrt_helper(int n, int a)
 	if (n == 0 || n == 1)
 		return (n);
 
-	if (n/a == a && a < n)
+	if (n/a == a)
 	{
 		return (a);
 	}
+	if ( a * a > n)
+		return (-1);
 	else
+	{
 		return sqrt_helper(n, a + 1);
+	}
 }
