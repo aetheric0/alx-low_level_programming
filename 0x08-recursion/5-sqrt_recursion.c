@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - Finds the square root of the number n
+ * _sqrt_recursion - calls a function to find thesquare root
+ * sqrt_helper - finds the square root of number n
  * @n: integer argument to find square root
+ * @a: number check
  * Return: Returns square root value of n
  **/
-
-int sqrt_helper(int, int);
 
 int _sqrt_recursion(int n)
 {
@@ -25,10 +25,7 @@ int sqrt_helper(int n, int a)
 	{
 		return (a);
 	}
-	if ( a * a > n)
+	if (a * a > n)
 		return (-1);
-	else
-	{
-		return sqrt_helper(n, a + 1);
-	}
+	return (sqrt_helper(n, a + 1));
 }
