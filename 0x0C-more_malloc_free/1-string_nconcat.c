@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * string_nconcat - concatenates characters in s1 and n bytes characters from s2
@@ -9,7 +8,14 @@
  * @n: size of bytes to by copied from s2
  * Return: pointer to concatenated string on success, NULL on failure
  **/
+unsigned int _strlen(char *s)
+{
+	unsigned int i, len = 0;
 
+	for (i = 0; s[i] != '\0'; i++)
+		len++;
+	return (len);
+}
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, k, len = 0;
@@ -19,9 +25,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	if (n > strlen(s2) || n == sizeof(s2))
-		n = strlen(s2);
-	len = strlen(s1);
+	if (n > _strlen(s2) || n == sizeof(s2))
+		n = _strlen(s2);
+	len = _strlen(s1);
 
 	len += n;
 
