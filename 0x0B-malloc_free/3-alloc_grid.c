@@ -26,7 +26,7 @@ int **alloc_grid(int width, int height)
 		if (matrix[i] == NULL)
 		{
 		for (j = 0; j < width; j++)
-			free(matrix[j];
+			free(matrix[j]);
 		free(matrix);
 		return (NULL);
 		}
