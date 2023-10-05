@@ -10,8 +10,8 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i;
-	void *alloc;
+	unsigned int i;
+	int *alloc;
 
 	alloc = malloc(nmemb * size);
 	if (alloc == NULL)
