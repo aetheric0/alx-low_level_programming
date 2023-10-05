@@ -1,0 +1,12 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * array_range - creates an array and initialize
+ * it with values from min to max
+ * @min: start of range
+ * @max: end of range
+ * Return: returnz pointer to an array
+ **/
+int *array_range(int min, int max)
+{}
