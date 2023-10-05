@@ -13,6 +13,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i;
 	int *alloc;
 
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 	for (i = 0; i < nmemb; i++)
 	{
 		alloc = malloc(size);
