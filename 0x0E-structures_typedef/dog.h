@@ -1,5 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
+#define NULL (void *)0
 /**
  * struct dog - Defines a new typw dog
  * @name: Name of dog
