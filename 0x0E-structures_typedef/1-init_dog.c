@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+#define NULL (void *)0
 
 /**
  * init_dog - initializes a variable of type dog when called
