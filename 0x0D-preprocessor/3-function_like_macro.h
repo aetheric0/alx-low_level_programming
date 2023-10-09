@@ -6,6 +6,7 @@
  * @x: variable
  * Return: returns absolute value
  **/
+int absolute(int);
 
 int absolute(x)
 {
