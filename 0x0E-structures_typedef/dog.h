@@ -1,6 +1,8 @@
+#ifndef HEADER_FILE
+#define HEADER_FILE
 /**
  * struct dog - Defines a new typw dog
- * @char: Name of dog
+ * @name: Name of dog
  * @age: Age of dog
  * @owner: Dog owner
  **/
@@ -11,3 +13,5 @@ struct dog
 	float age;
 	char *owner;
 };
+
+#endif
