@@ -1,7 +1,19 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
-#include <stdlib.h>
 
-#define ABS(x) abs(x)
+/**
+ * absolute - gives the absolute value
+ * @x: variable
+ * Return: returns absolute value
+ **/
+
+int absolute(x)
+{
+	if (x < 0)
+		x = -1 * (x);
+	return (x);
+}
+
+#define ABS(x) absolute(x)
 
 #endif
