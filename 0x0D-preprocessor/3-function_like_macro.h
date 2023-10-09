@@ -8,7 +8,7 @@
  **/
 int absolute(int);
 
-int absolute(x)
+int absolute(int x)
 {
 	if (x < 0)
 		x = -1 * (x);
