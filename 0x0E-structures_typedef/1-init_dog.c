@@ -2,6 +2,9 @@
 
 /**
  * init_dog - initializes a variable of type dog when called
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: Dog owner
  **/
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
