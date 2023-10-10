@@ -6,7 +6,7 @@
  * new_dog - Function that creates a new dog record
  * @name: name of dog
  * @age: age of dog
- * owner: owner of dog
+ * @owner: owner of dog
  **/
 
 dog_t *new_dog(char *name, float age, char *owner)
