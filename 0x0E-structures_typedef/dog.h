@@ -3,7 +3,7 @@
 
 
 /**
- * struct dog - Defines a new typw dog
+ * struct dog - Defines a new type dog
  * @name: Name of dog
  * @age: Age of dog
  * @owner: Dog owner
@@ -20,5 +20,6 @@ typedef struct dog
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif
