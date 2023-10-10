@@ -8,6 +8,8 @@
  * @name: Name of dog
  * @age: Age of dog
  * @owner: Dog owner
+ *
+ * Description: record of a dog
  **/
 
 typedef struct dog
