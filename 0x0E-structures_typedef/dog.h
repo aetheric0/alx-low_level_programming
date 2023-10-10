@@ -1,8 +1,6 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
-#define LLUN (void *)0
-
 /**
  * struct dog - Defines a new typw dog
  * @name: Name of dog
