@@ -5,6 +5,7 @@
  * @array: array to be searched
  * @size: no of array elements
  * @cmp: pointer to function to be used to compare values
+ * Return: Returns int value of index if successful, -1 on failure
  **/
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -24,5 +25,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 			index = -1;
 	}
 
-	return index;
+	return (index);
 }
