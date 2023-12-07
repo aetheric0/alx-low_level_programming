@@ -31,6 +31,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
+	if ((strcmp(s, "/") == 0 || strcmp(s, "%") == 0) && b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
 	printf("%d\n", op_func(a, b));
 	return (0);
