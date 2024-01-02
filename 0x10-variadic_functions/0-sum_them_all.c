@@ -4,6 +4,7 @@
 /**
  * sum_them_all - Functions that adds all the arguments passed to it
  * @n: First argument constant
+ * Return: Returns sum of value (Success)
  **/
 
 int sum_them_all(const unsigned int n, ...)
