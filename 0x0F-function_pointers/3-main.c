@@ -6,8 +6,9 @@
 
 /**
  * main - Performs simple arithmetic operations using only two operands
- * argc - argument count
- * argv - string argument
+ * @argc: argument count
+ * @argv: string argument
+ * Return: Value is 0 (Success)
  **/
 
 int main(int argc, char *argv[])
