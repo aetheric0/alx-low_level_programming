@@ -12,9 +12,12 @@ void print_binary(unsigned long int n)
 	int start;
 
 	if (n == 0)
+	{
 		_putchar('0');
+		return;
+	}
 
-	bitmask = 1UL << (sizeof(unsigned int) * (8 - 1));
+	bitmask = 1UL << (sizeof(unsigned long int) * (8 - 1));
 	start = 0;
 	while (bitmask > 0)
 	{
