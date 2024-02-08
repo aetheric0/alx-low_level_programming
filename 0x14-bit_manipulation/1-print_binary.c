@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 			_putchar('1');
 			start = 1;
 		}
-		else if (start)
+		else if (start || bitmask == 1)
 			_putchar('0');
 		bitmask = bitmask >> 1;
 	}
