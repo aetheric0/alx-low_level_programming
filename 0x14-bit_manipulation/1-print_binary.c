@@ -18,13 +18,11 @@ void print_binary(unsigned long int n)
 	start = 0;
 	while (bitmask > 0)
 	{
-		if ((n & bitmask) != 0)
+		if ((n & bitmask) != 0 || start)
 		{
-			_putchar('1');
+			_putchar((n & bitmask) ? '1' : '0');
 			start = 1;
 		}
-		else if (start || bitmask == 1)
-			_putchar('0');
 		bitmask = bitmask >> 1;
 	}
 }
