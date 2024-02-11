@@ -8,7 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int bitmask;
+	unsigned long int bitmask, start;
 
 	if (n == 0)
 	{
@@ -16,10 +16,15 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	bitmask = 1UL << (sizeof(unsigned long int) * (8 - 1));
+	bitmask = 1UL << ((sizeof(unsigned long int) * 8) - 1);
+	start = 0;
 	while (bitmask > 0)
 	{
-		_putchar((n & bitmask) ? '1' : '0');
+		if ((n & bitmask) != 0 || start)
+		{
+			_putchar((n & bitmask) ? '1' : '0');
+			start = 1;
+		}
 		bitmask = bitmask >> 1;
 	}
 }
