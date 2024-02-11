@@ -8,8 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int bitmask;
-	int start;
+	unsigned long int bitmask, i;
 
 	if (n == 0)
 	{
