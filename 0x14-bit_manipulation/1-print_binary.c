@@ -16,7 +16,7 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	bitmask = 1UL << (sizeof(unsigned long int) * (8 - 1));
+	bitmask = 1UL << (sizeof(unsigned long int) * (8));
 	start = 0;
 	while (bitmask > 0)
 	{
