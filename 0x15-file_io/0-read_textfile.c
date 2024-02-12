@@ -19,14 +19,17 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t reader, counter, written;
 	char *buffer;
 
-	if (filename == NULL)
+	if (filename == NULL || letters < 0)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 	buffer = (char *)malloc(sizeof(char) * letters);
 		if (buffer == NULL)
+		{
+			close(fd);
 			return (0);
+		}
 		counter = 0;
 		while ((reader = read(fd, buffer, letters)) > 0)
 		{
