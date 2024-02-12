@@ -26,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buffer = (int *)malloc(sizeof(size_t) * letters);
 		if (buffer == NULL)
-			printf("failed to dynamically allocate memory");
+			return (0);
 		while ((reader = read(fd, buffer, letters)) > 0)
 	       counter = write(STDOUT_FILENO, buffer, letters);
 
