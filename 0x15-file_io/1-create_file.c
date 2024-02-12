@@ -8,6 +8,7 @@
  * create_file - function to create a file
  * @filename: the file to be created
  * @text_content: the content to be written to the file
+ * Return: Returns 1 on success!, -1 on failure
  **/
 
 int create_file(const char *filename, char *text_content)
