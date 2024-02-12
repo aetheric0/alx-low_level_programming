@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		counter = 0;
 		while ((reader = read(fd, buffer, letters)) > 0)
 		{
-			written = write(STDOUT_FILENO, buffer, letters);
+			written = write(STDOUT_FILENO, buffer, reader);
 			if (written == -1)
 			{
 				close(fd);
@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			counter += written;
 		}
 
-	if (reader == -1 || reader != counter)
+	if (reader == -1)
 	{
 		close(fd);
 		free(buffer);
