@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 
 /**
@@ -24,7 +23,6 @@ int create_file(const char *filename, char *text_content)
 	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0600);
 	if (fd == -1)
 	{
-		perror("open");
 		return (-1);
 	}
 
@@ -33,7 +31,6 @@ int create_file(const char *filename, char *text_content)
 		written = write(fd, text_content, length);
 		if (written == -1)
 		{
-			perror("write");
 			close(fd);
 			return (-1);
 		}
