@@ -1,7 +1,9 @@
 #include "main.h"
+#include <fcntl.h>
 #include <stdio.h>
 #include <stddef.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 
 /**
@@ -13,26 +15,25 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fp = NULL;
-	size_t i, counter;
-	char ch;
+	int fd;
+	ssize_t reader, counter;
+	int *buffer;
 
 	if (filename == NULL)
 		return (0);
-	fp = fopen(filename, "r");
-	if (fp == NULL)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+		return (0);
+	buffer = (int *)malloc(sizeof(size_t) * letters);
+		if (buffer == NULL)
+			printf("failed to dynamically allocate memory");
+		while ((reader = read(fd, buffer, letters)) > 0)
+	       counter = write(STDOUT_FILENO, buffer, letters);
+
+	if (reader != counter)
 		return (0);
 
-	for (i = 0; i < letters; i++)
-	{
-		ch = fgetc(fp);
-		write(STDOUT_FILENO, &ch, 1);
-		counter++;
-	}
-
-	if (counter != letters)
-		return (0);
-
-	fclose(fp);
+	free(buffer);
+	close(fd);
 	return (counter);
 }
