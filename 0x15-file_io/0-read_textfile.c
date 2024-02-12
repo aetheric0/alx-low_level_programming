@@ -17,18 +17,25 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	ssize_t reader, counter;
-	int *buffer;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = (int *)malloc(sizeof(size_t) * letters);
+	buffer = (char *)malloc(sizeof(char) * letters);
 		if (buffer == NULL)
 			return (0);
+		counter = 0;
 		while ((reader = read(fd, buffer, letters)) > 0)
-	       counter = write(STDOUT_FILENO, buffer, letters);
+		{
+			counter = write(STDOUT_FILENO, buffer, letters);
+			if (counter == -1)
+			{
+				return (0);
+			}
+		}
 
 	if (reader != counter)
 		return (0);
