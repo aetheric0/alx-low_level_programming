@@ -1,8 +1,8 @@
 #include "main.h"
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdlib.h>
 #include <string.h>
+#define BUFFSIZE 1024
 
 /**
  * create_file - function to create a file
@@ -13,9 +13,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int len;
-	ssize_t fd, written;
-	char *buffer;
+	ssize_t fd;
 
 	if (filename == NULL)
 		return (-1);
@@ -25,20 +23,13 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	len = strlen(text_content);
-	buffer = (char *)malloc(sizeof(char) * len);
 
-	if (text_content != NULL)
+	if ((write(fd, text_content, BUFFSIZE)) == -1)
 	{
-		written = write(fd, buffer, len);
-		if (written == -1)
-		{
-			close(fd);
-			return (-1);
-		}
+		close(fd);
+		return (-1);
 	}
 
 	close(fd);
-	free(buffer);
 	return (1);
 }
