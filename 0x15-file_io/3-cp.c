@@ -24,26 +24,23 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	buffer = (char *)malloc(sizeof(char) * strlen(argv[1]));
-	if ((file1 = open(argv[1], O_RDONLY)) == -1)
-		{
-			dprintf(STDERR_FILENO,
-			"Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-		}
-	if ((file2 = open(argv[2], O_RDWR | O_CREAT, 0664)) == -1)
+	file1 = open(argv[1], O_RDONLY);
+	if (file1 == -1)
 	{
-		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s", argv[2]);
-		exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+	exit(98);
 	}
+	file2 = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
+
 	while ((reader = read(file1, buffer, BUFFSIZE)) > 0)
-		if ((writer = write(file2, buffer, reader)) != reader)
+	{
+		writer = write(file2, buffer, reader);
+		if (writer != reader || file2 == -1)
 		{
-		dprintf(STDERR_FILENO,
-			"Error: Can't write to %s", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
 		exit(99);
 		}
-
+	}
 	if (close(file1) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file1);
