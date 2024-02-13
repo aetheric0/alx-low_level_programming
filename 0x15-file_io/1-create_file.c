@@ -13,10 +13,8 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	ssize_t length, fd, written;
-	char nullbyte = '\0';
+	ssize_t fd, written;
 
-	length = strlen(text_content);
 	if (filename == NULL)
 		return (-1);
 
@@ -28,8 +26,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		written = write(fd, text_content, length);
-		written = write(fd, &nullbyte, 1);
+		written = write(fd, text_content, 1);
 		if (written == -1)
 		{
 			close(fd);
