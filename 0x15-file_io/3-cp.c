@@ -7,6 +7,20 @@
 #define BUFFSIZE 1024
 
 /**
+ * close_file - checks if close system call properly executes
+ * @file: file descriptor
+ **/
+
+void close_file(int file)
+{
+	if (close(file) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file);
+		exit(100);
+	}
+}
+
+/**
  * main - copies content of a file to another
  * @argc: argument count
  * @argv: file arguments
@@ -23,35 +37,32 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	buffer = (char *)malloc(sizeof(char) * strlen(argv[1]));
 	file1 = open(argv[1], O_RDONLY);
 	if (file1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-	exit(98);
+		exit(98);
 	}
 	file2 = open(argv[2], O_RDWR | O_CREAT | O_TRUNC, 0664);
-
+	if (file2 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		exit(99);
+	}
+	buffer = (char *)malloc(sizeof(char) * BUFFSIZE);
 	while ((reader = read(file1, buffer, BUFFSIZE)) > 0)
 	{
 		writer = write(file2, buffer, reader);
-		if (writer != reader || file2 == -1)
+		if (writer != reader)
 		{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s", argv[2]);
+		free(buffer);
 		exit(99);
 		}
+
 	}
-	if (close(file1) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file1);
-		exit(100);
-	}
-	close(file1);
-	if (close(file2) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d", file2);
-		exit(100);
-	}
+	close_file(file1);
 	close(file2);
+	free(buffer);
 	return (0);
 }
