@@ -1,0 +1,24 @@
+#include "lists.h"
+
+/**
+ * printt_dlistint - prints all the elements of a list
+ * @h: list
+ * Return: number of elements in list
+ **/
+
+size_t print_dlistint(const dlistint_t *h)
+{
+	size_t i = 0;
+	dlistint_t *temp;
+
+	if (h == NULL)
+		return (0);
+	temp = (dlistint_t *)h;
+	while (temp != NULL)
+	{
+		printf("%d\n", temp->n);
+		temp = temp->next;
+		i++;
+	}
+	return (i);
+}
