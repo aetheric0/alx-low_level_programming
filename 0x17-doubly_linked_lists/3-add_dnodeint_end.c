@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint_end - add node to the end of a doubly linked list
- * head: pointer to list
+ * @head: pointer to list
  * @n: value of new node
  * Return: address of newnode on success, NULL on failure
  **/
