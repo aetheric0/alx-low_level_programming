@@ -6,10 +6,8 @@ NAME = school
 RM := rm -f
 CFLAGS := $(CC) -Wall -Werror -Wextra -pedantic
 
-$(OBJ): %.o: %.c
-	${CFLAGS} -c -o $@ $<
 all: $(OBJ)
-	gcc $(OBJ) -o $(NAME)
+	${CFLAGS} $(OBJ) -o $(NAME)
 clean:
 	$(RM) *~ $(NAME)
 oclean:
