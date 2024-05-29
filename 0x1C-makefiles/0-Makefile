@@ -1,0 +1,4 @@
+all: $(wildcard *.c)
+	gcc *.c -o school
+%.o: %.c
+	gcc -c $< $@
