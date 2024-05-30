@@ -4,8 +4,8 @@
 
 def island_perimeter(grid):
     """Finds the perimeter of an island except for diagonal cells"""
-    perimeter = k = 0
-    for i in range(len(grid)):
+    perimeter = 0
+    for i in range(len(grid) - 1):
         for j in range(len(grid[i]) - 1):
             if grid[i][j] == 1:
                 perimeter += 4
